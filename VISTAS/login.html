@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+    body{
+        background-color: rgb(48, 45, 45);
+        text-align: center;
+    }     
+    .login{
+        color: bisque;
+        border-radius: 15px;
+        border-color: aliceblue;
+        background-color: rgb(87, 62, 62);
+        margin: 80px 500px;
+        padding: 70px 10px;
+        
+    }
+    a{
+        color: aliceblue;
+    }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h1>LOGIN</h1>
+
+        <form action="/CONTROLADOR/bienvenido.php" method="post">
+            <label for="username">Username</label>
+            <input type="text" name="Username" placeholder="Usuario" id="username"
+            required> <br><br><br>
+            <label for="password">Password</label>
+            <input type="password" name="Password" placeholder="Contraseña" id="password" required> <br><br><br>
+            <button>Acceder</button>
+            <a href="register.html">¿Aun no tienes una cuenta?</a>
+        </form>
+    </div>
+</body>
+</html>
